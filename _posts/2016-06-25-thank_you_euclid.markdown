@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Thank You Euclid "
-date:   2016-06-25 23:58:54 +0000
+date:   2016-06-25 19:58:54 -0400
 ---
 
 
