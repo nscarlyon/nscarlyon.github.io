@@ -10,7 +10,7 @@ The purpose of this project was to create a CRUD app that kept a track of someth
 
 In order to create a successful CRUD app, it is essential that you understand the relationship between the models. Here is a simple diagram I made on Gliffy to understand the different relationships between my models/tables.
 
-![](http://i.imgur.com/n1CFCeI.gif)
+![](http:/i.imgur.com/n1CFCeI.gif)
 
 By making this diagram, I was able to see that the user had access to only artworks she added to her list. It was important for the artwork table to have a user id, so only a specific user can have access to that data. A different user would not be able to see the artwork created by another user. The diagram also helped me see how the artist had many artwork movements through the artworks. This resembles real life. An artist is not considered a part of an art movement, unless he is creating artwork associated with that movement. Perhaps comparing associations to political parties was not far-fetch.
 
