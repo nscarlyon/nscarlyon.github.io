@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Fighting Ajax: JS Prototypes and Handlebars"
-date:   2016-08-24 19:55:23 +0000
+date:   2016-08-24 15:55:23 -0400
 ---
 
 
