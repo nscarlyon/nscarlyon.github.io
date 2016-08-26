@@ -10,7 +10,7 @@ For this blog post, I will show you how to use ajax to request a specific recipe
 
 First, you need to install handlebars. Handlebars is a javascript library that enables you to create dynamic templates for rendering js objects. Once, you have the handlebars library properlly included in your project, you may combine it with the power of AJAX. You may find the appropriate installation directions for your project here: [http://handlebarsjs.com/](http://) 
 
-###Ruby/HTML Code for the Recipe Show Page
+**Ruby/HTML Code for the Recipe Show Page**
 
 Here is the ruby/html code for the recipe show page.
 
@@ -35,7 +35,7 @@ Here is the ruby/html code for the recipe show page.
 
 It is important to include some kind of 'results' (recipeResults) container around your show data; this will make it easy for you to replace that information. The reason why I did not include the js-next button in the results container is because I wanted to be able to display the data of a single recipe on different views that do not include a next recipe button.
 
-###Render a Recipe JSON
+**Render a Recipe JSON**
 
 Next, you need to render a recipe as a JSON. 
 
@@ -76,7 +76,7 @@ def show
 
 The respond_to block is basically saying that it will return json or html depending on the request. When I go to the route: http://localhost:3000/recipes/2.json, I get the json for the recipe with the id 2. When I visit http://localhost:3000/recipes/2, the show action renders the html show view.
 
-###Using AJAX to retrieve recipe JSON 
+**Using AJAX to retrieve recipe JSON **
 
 I will now move to my recipe.js file to write in the necessary js code. Remember to include the recipe.js file in your view show page! 
 
@@ -107,7 +107,7 @@ Since the js-next button is dynamic, I needed to make sure that I retrieved the 
 
 Thus, using this id, I can get the next recipe's json by adding 1 to it. Using $.get, a higher level AJAX request, I can get the recipe json. In theory, I could use this data and display it as html, but this could get messy if you plan on including a lot of html tags. Also the recipe has nested data that is two levels deeps. 
 
-###Translating Recipe JSON into JS object
+**Translating Recipe JSON into JS object**
 
 I included the js syntax used to create a js object in my function:
 
@@ -131,7 +131,7 @@ function Recipe(attributes) {
 }
 ```
 
-###Using a handlebars template to render a JS object
+**Using a handlebars template to render a JS object**
 
 First, I needed to include a handlebars template in my recipe show view:
 
@@ -194,7 +194,7 @@ Handlebars.registerHelper('list', function(ingredients, options) {
 
 The handlebars helper accepts, as its parameters, the name of where you you are calling the helper in your recipe template, the ingredients array, and the variable options (or attributes of the ingredients). It uses a for loop to iterate through each ingredient. The .fn is a handlebars function that enables the handlebars template in the view to access whatever options(or attributes) are available in the specific ingredient.
 
-###Finale
+**Finale**
 
 For the last bit of Recipe.nextRecipe, I included this bit of code:
 
