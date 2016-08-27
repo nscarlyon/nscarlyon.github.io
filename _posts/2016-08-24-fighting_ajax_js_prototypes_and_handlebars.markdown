@@ -135,18 +135,18 @@ function Recipe(attributes) {
 
 **Using a handlebars template to render a JS object**
 
-First, I needed to include a handlebars template in my recipe show view:
+First, I needed to include a handlebars template in my recipe show view (Github blog interface does not like having {{}} surrounding text in the blog, so I bolded everything in the code that should be surrounded by double curly braces):
 
 ```
 <script id="recipe-template" type="text/x-handlebars-template">
-  <h1>{{name}}</h1>
+  <h1>**name**</h1>
 
   <h3>Content</h3>
-    <p>{{content}}</p>
+    <p>**content**</p>
 
   <h3>Ingredients List</h3>
-    {{#list ingredients}}
-    <strong>Item:</strong> {{item.name}} <strong>Quantity:</strong> {{quantity}} {{unit}}{{/list}}
+**#list ingredients**
+    <strong>Item:</strong> **item.name** <strong>Quantity:</strong> **quantity**  ** unit**  ** /list**
 
 </script>
 ```
@@ -175,12 +175,12 @@ Recipe.prototype.renderDisplay = function() {
 
 However, you need to add some extra code if you have dynamic nested data. For instance, one recipe might have two ingredients, while another recipe has ten ingredients. Handlebars uses helper methods to deal with nested variable data. First, I'll explain the template portion in the show view:
 
-```
-  <h3>Ingredients List</h3>
-    {{#list ingredients}}
-    <strong>Item:</strong> {{item.name}} <strong>Quantity:</strong> {{quantity}} {{unit}}
-		{{/list}}
-```
+> 
+>   <h3>Ingredients List</h3>
+>     {{#list ingredients}}
+>     <strong>Item:</strong> {{item.name}} <strong>Quantity:</strong> {{quantity}} {{unit}}
+> 		{{/list}}
+> 
 
 The # signals to hashbar that you are calling a handlebars helper for 'list'. 'ingredients' is what is being passed onto the Handlebars helper that I included in recipe.js:
 
