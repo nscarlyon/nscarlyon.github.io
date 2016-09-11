@@ -42,13 +42,13 @@ angular
  
  `
  <div ng-controller="myController as ctrl">
- Look at the {{ctrl.artwork}}
+ Look at the **ctrl.artwork** //This blog does not allow double curly braces '{', so I used asterisks instead.
  </div>
  `
  
  The view will display as: Look at the Mona Lisa
  
- The directive ng-controller binds the $scope in the view to this specific controller called myController that is nicknamed ctrl. {{}} tells the view to get the $scope's data from the controller and then send it back to the view. 
+ The directive ng-controller binds the $scope in the view to this specific controller called myController that is nicknamed ctrl. The double curly braces tells the view to get the $scope's data from the controller and then send it back to the view. 
  
  One of the tools of AngularJS is services. I like to think of them as waiters/servers. They help the controller by transferring data. For instance, you could use a server to send a $http.get request. Now, it is true that you can do the same in the controller, but it is best practice ot keep the controllers lean and clean. You want controllers to focus on defining the $scope. If you start inserting different code in the controllers, your app is more prone to bugs. 
  
