@@ -4,7 +4,7 @@ header-img: img/home-bg.png
 email: natasha.carlyon@gmail.com
 copyright_name: nscarlyon
 description: > # this means to ignore newlines until "baseurl:"
-  One error at a time
+  One Error at a Time
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  nscarlyon
