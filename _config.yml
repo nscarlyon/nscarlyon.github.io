@@ -6,7 +6,7 @@ copyright_name: nscarlyon
 description: > # this means to ignore newlines until "baseurl:"
   One Error at a Time
 baseurl: "" # the subpath of your site, e.g. /blog
-twitter_username: 
+twitter_username: nscarlyon
 github_username:  nscarlyon
 learn_profile: nscarlyon
 email_username: natasha.carlyon@gmail.com
