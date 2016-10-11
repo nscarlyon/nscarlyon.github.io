@@ -1,0 +1,7 @@
+<div class="post" ng-if="post.data">
+  <a href="{{post.data.url}}" class="post__title">{{post.data.title}} by {{post.data.by}}</a>
+
+  <div class="post__description">
+    Comments: {{post.data.descendants}} Score: {{post.data.score}}
+  </div>
+</div>

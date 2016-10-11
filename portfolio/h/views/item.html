@@ -1,0 +1,23 @@
+<div class="item" ng-if="item.data">
+
+  <div ng-switch="item.data.type">
+    <div ng-switch-when="story">
+      <a href="{{item.data.url}}" class="item__title">{{item.data.title}} by {{item.data.by}}</a>
+
+      <div class="item__description">
+        Comments: {{item.data.descendants}} Score: {{item.data.score}}
+      </div>
+    </div>
+  </div>
+
+      <div ng-bind-html="item.data.text"></div>
+
+      <ul class="comments">
+        <li ng-repeat="comment in item.data.kids">
+          <div class="item__title">
+            {{item.data.by}} {{ (item.data.time * 1000) | date: 'short'}}
+          </div>
+          <item id="comment"></item>
+        </li>
+    </ul>
+</div>
