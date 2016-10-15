@@ -8,7 +8,7 @@ When I first tried to deploy a Rails app on Heroku, there were some road blocks.
 
 **Prerequisites**
 
-Heroku has excellent ste by step instructions on installing the Heroku CLI, or known formerly as the Heroku Toolbelt. The Heroku Toolbelt will allow you to type in Heroku commands in your terminal.
+Heroku has excellent step by step instructions on installing the Heroku CLI, or known formerly as the Heroku Toolbelt. The Heroku Toolbelt will allow you to type in Heroku commands in your terminal.
 
 [Getting Started on Heroku with Ruby](https://devcenter.heroku.com/articles/getting-started-with-ruby#introduction)
 
@@ -33,12 +33,12 @@ Personally, there were three different issues I encountered while trying to depl
 `rake assets:clobber`
 `rake assets:precompile`
 
-2. You did not run your database! Solution:
+2. You did not run your database! Run in terminal:
 
 `heroku run rake db:migrate`
 `heroku run rake db:seed` (if you have any seed data)
 
-3. Heroku does not like sqlite. Solution:
+3. Heroku does not like sqlite. Place in Gemfile:
 
 ```
 gem 'sqlite3', :group => [:development, :test]
@@ -48,7 +48,7 @@ group :production do
 end
 ```
 
-You can read more about why Heroku prefers to use 'pg'(PostgresSql) over 'sqlite' [here](https://devcenter.heroku.com/articles/sqlite3)
+You can read more about why Heroku prefers to use 'pg'(PostgresSql) over 'sqlite'. [here](https://devcenter.heroku.com/articles/sqlite3)
 
 **Final Thoughts**
 
