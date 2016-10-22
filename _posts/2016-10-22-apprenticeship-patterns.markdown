@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Apprenticeship Patterns
+title:  "Apprenticeship Patterns"
 date:   2016-10-22 10:26:33 -0400
 ---
 
@@ -58,4 +58,4 @@ be true for programming. I will start by reading the source code for the Ruby la
 **Final Thoughts**
 
 There were many more patterns in this book that resonated with me such as "Rubbing Elbows", "Confronting your
-Ignorance", and "Reading Constantly". I will certainly refer to this book in the future. 
+Ignorance", and "Reading Constantly". I will certainly refer to this book in the future.
