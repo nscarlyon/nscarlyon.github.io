@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Big O Notation Part One"
+title:  "Big O Notation Part Two"
 date:   2016-11-13 08:53:33 -0400
 ---
 
