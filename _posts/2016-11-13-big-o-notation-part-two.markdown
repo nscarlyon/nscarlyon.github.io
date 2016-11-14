@@ -7,6 +7,7 @@ date:   2016-11-13 08:53:33 -0400
 This is part two of Big O Notation.
 
 **O(n!)**
+
 You will most likely not encounter this notation. The exclamation mark indicates that it is a factorial. For
 example, let us say that n is 4. This is the factorial for 4:
 
