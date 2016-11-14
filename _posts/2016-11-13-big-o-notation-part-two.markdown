@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Big O Notation Part One"
-date:   2016-13-06 08:53:33 -0400
+date:   2016-11-13 08:53:33 -0400
 ---
 
 This is part two of Big O Notation.
